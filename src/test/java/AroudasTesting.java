@@ -44,6 +44,7 @@ public class AroudasTesting {
         _globalDriver.findElement(By.id("password")).sendKeys(generateUserName());
         //press registruotis
         _globalDriver.findElement(By.id("registerButton")).click();
+        Assert.assertEquals(_globalDriver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div[2]/div[1]/div[1]/a/span[2]")).getText(), "Mano aruodas");
     }
 
     @Test
