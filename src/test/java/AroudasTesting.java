@@ -61,6 +61,7 @@ public class AroudasTesting {
         _globalDriver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div[2]/div[1]/div[1]")).click();
         //press atsijungti
         _globalDriver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div[2]/div[1]/div[1]/div/div/ul/li[10]")).click();
+        Assert.assertEquals(_globalDriver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div[2]/div[1]/div[1]/div/div[2]/div")).getText(), "Prisijungti");
 
     }
     @Test
